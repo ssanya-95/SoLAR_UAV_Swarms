@@ -1,12 +1,3 @@
-# SLAR UAV Swarm Simulator
-
-This package implements the routing framework described in `Globecom_proposal (3).pdf`:
-
-- Section 2 channel model with log-distance path loss, temporally correlated log-normal shadowing, and Rician link success probability via `scipy.stats.ncx2`.
-- Section 3 Kalman filter with a 6D constant-velocity state and normalized link duration prediction.
-- Section 4 GPSR and AODV baselines.
-- Section 5 SLAR scoring with the mandatory positive geographic-progress gate.
-
 ## Layout
 
 - `slar_sim/config.py`: constants and derived channel terms.
@@ -35,8 +26,3 @@ python3 scripts/globecom_evaluation.py --grid-step 0.1 --train-seeds 8 --test-se
 ```bash
 python3 scripts/uav_count_sensitivity.py --grid-step 0.1 --train-seeds 8 --test-seeds 12 --uav-counts 8,12,16,20,24,28,32
 ```
-
-## Notes
-
-- The proposal does not tabulate a single numeric communication range `R`, so the framework exposes `communication_range_m` as a configuration parameter with a default of `50.0` m.
-- The proposal requires temporally correlated shadowing but does not specify a correlation coefficient, so `shadowing_correlation` is configurable and defaults to `0.9`.
