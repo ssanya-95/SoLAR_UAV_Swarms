@@ -1,0 +1,184 @@
+{
+  "overall_ranking": [
+    {
+      "avg_delivery_latency_steps_ci95": 1.5383421091550387,
+      "avg_delivery_latency_steps_mean": 7.432015909395394,
+      "avg_hops_per_delivered_ci95": 0.1716772746209193,
+      "avg_hops_per_delivered_mean": 2.8073043659608437,
+      "avg_success_rate_ci95": 0.04666926057083194,
+      "avg_success_rate_mean": 0.5963306259927407,
+      "avg_total_queue_length_ci95": 0.5042813621006972,
+      "avg_total_queue_length_mean": 2.3651515151515157,
+      "packet_delivery_ratio_ci95": 0.07146093992470859,
+      "packet_delivery_ratio_mean": 0.8116161616161617,
+      "router": "slar-tuned",
+      "transmission_attempts_ci95": 10.887882323247402,
+      "transmission_attempts_mean": 94.21212121212122
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 1.4298163096849736,
+      "avg_delivery_latency_steps_mean": 9.243747076615568,
+      "avg_hops_per_delivered_ci95": 0.15836808491991938,
+      "avg_hops_per_delivered_mean": 2.5521187286967213,
+      "avg_success_rate_ci95": 0.0393455166073264,
+      "avg_success_rate_mean": 0.42612280904068894,
+      "avg_total_queue_length_ci95": 0.44936887568809725,
+      "avg_total_queue_length_mean": 2.6772727272727277,
+      "packet_delivery_ratio_ci95": 0.06764156745804581,
+      "packet_delivery_ratio_mean": 0.8075757575757575,
+      "router": "gpsr",
+      "transmission_attempts_ci95": 14.114312859510237,
+      "transmission_attempts_mean": 118.72727272727273
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 1.4298163096849736,
+      "avg_delivery_latency_steps_mean": 9.243747076615568,
+      "avg_hops_per_delivered_ci95": 0.15836808491991938,
+      "avg_hops_per_delivered_mean": 2.5521187286967213,
+      "avg_success_rate_ci95": 0.0393455166073264,
+      "avg_success_rate_mean": 0.42612280904068894,
+      "avg_total_queue_length_ci95": 0.44936887568809725,
+      "avg_total_queue_length_mean": 2.6772727272727277,
+      "packet_delivery_ratio_ci95": 0.06764156745804581,
+      "packet_delivery_ratio_mean": 0.8075757575757575,
+      "router": "slar-geo",
+      "transmission_attempts_ci95": 14.114312859510237,
+      "transmission_attempts_mean": 118.72727272727273
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 1.367092381071909,
+      "avg_delivery_latency_steps_mean": 8.056506223238562,
+      "avg_hops_per_delivered_ci95": 0.15408059975759852,
+      "avg_hops_per_delivered_mean": 2.728531181919164,
+      "avg_success_rate_ci95": 0.036306778149896204,
+      "avg_success_rate_mean": 0.5072876112070874,
+      "avg_total_queue_length_ci95": 0.47565863410961656,
+      "avg_total_queue_length_mean": 2.526969696969697,
+      "packet_delivery_ratio_ci95": 0.06494813048230767,
+      "packet_delivery_ratio_mean": 0.7994949494949495,
+      "router": "slar-default",
+      "transmission_attempts_ci95": 12.219973040020198,
+      "transmission_attempts_mean": 105.06060606060606
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 1.262289954284241,
+      "avg_delivery_latency_steps_mean": 9.38818435551689,
+      "avg_hops_per_delivered_ci95": 0.241808502203911,
+      "avg_hops_per_delivered_mean": 2.6654346591148825,
+      "avg_success_rate_ci95": 0.0442826910106407,
+      "avg_success_rate_mean": 0.41635949257358973,
+      "avg_total_queue_length_ci95": 0.5212926690883195,
+      "avg_total_queue_length_mean": 2.872121212121212,
+      "packet_delivery_ratio_ci95": 0.08534824525322139,
+      "packet_delivery_ratio_mean": 0.7641414141414141,
+      "router": "aodv",
+      "transmission_attempts_ci95": 18.076569887189436,
+      "transmission_attempts_mean": 122.33333333333333
+    }
+  ],
+  "test_seed_count": 3,
+  "top_10_tuning_rows": [
+    {
+      "train_avg_attempts": 127.75,
+      "train_avg_latency": 11.294516894139573,
+      "train_avg_pdr": 0.9125,
+      "train_avg_success_rate": 0.5641307646864141,
+      "w_geo": 0.4,
+      "w_ld": 0.0,
+      "w_link": 0.6000000000000001
+    },
+    {
+      "train_avg_attempts": 130.625,
+      "train_avg_latency": 10.745307418944588,
+      "train_avg_pdr": 0.8645833333333334,
+      "train_avg_success_rate": 0.5126081304457374,
+      "w_geo": 0.4,
+      "w_ld": 0.2,
+      "w_link": 0.4
+    },
+    {
+      "train_avg_attempts": 132.0,
+      "train_avg_latency": 10.470243122992905,
+      "train_avg_pdr": 0.8500000000000001,
+      "train_avg_success_rate": 0.649226153276195,
+      "w_geo": 0.0,
+      "w_ld": 0.2,
+      "w_link": 0.8
+    },
+    {
+      "train_avg_attempts": 129.625,
+      "train_avg_latency": 9.850655194019533,
+      "train_avg_pdr": 0.8458333333333333,
+      "train_avg_success_rate": 0.5415403049482304,
+      "w_geo": 0.2,
+      "w_ld": 0.4,
+      "w_link": 0.4
+    },
+    {
+      "train_avg_attempts": 149.25,
+      "train_avg_latency": 9.894158036021427,
+      "train_avg_pdr": 0.8458333333333333,
+      "train_avg_success_rate": 0.43340741928940185,
+      "w_geo": 0.6000000000000001,
+      "w_ld": 0.0,
+      "w_link": 0.4
+    },
+    {
+      "train_avg_attempts": 136.0,
+      "train_avg_latency": 10.598052345938376,
+      "train_avg_pdr": 0.8416666666666667,
+      "train_avg_success_rate": 0.6455312584301967,
+      "w_geo": 0.0,
+      "w_ld": 0.8,
+      "w_link": 0.2
+    },
+    {
+      "train_avg_attempts": 138.75,
+      "train_avg_latency": 9.746490036231883,
+      "train_avg_pdr": 0.8375000000000001,
+      "train_avg_success_rate": 0.6166669437118264,
+      "w_geo": 0.0,
+      "w_ld": 0.4,
+      "w_link": 0.6000000000000001
+    },
+    {
+      "train_avg_attempts": 132.75,
+      "train_avg_latency": 10.147660887962612,
+      "train_avg_pdr": 0.8333333333333333,
+      "train_avg_success_rate": 0.5416073946031653,
+      "w_geo": 0.2,
+      "w_ld": 0.2,
+      "w_link": 0.6000000000000001
+    },
+    {
+      "train_avg_attempts": 151.375,
+      "train_avg_latency": 10.180671296296296,
+      "train_avg_pdr": 0.83125,
+      "train_avg_success_rate": 0.42279059300747857,
+      "w_geo": 1.0,
+      "w_ld": 0.0,
+      "w_link": 0.0
+    },
+    {
+      "train_avg_attempts": 132.375,
+      "train_avg_latency": 10.810254459874136,
+      "train_avg_pdr": 0.8312499999999999,
+      "train_avg_success_rate": 0.5729997917466783,
+      "w_geo": 0.2,
+      "w_ld": 0.0,
+      "w_link": 0.8
+    }
+  ],
+  "train_seed_count": 2,
+  "tuned_weights": {
+    "w_geo": 0.4,
+    "w_ld": 0.0,
+    "w_link": 0.6000000000000001
+  },
+  "tuning_scenarios": [
+    "base",
+    "traffic_heavy",
+    "mobility_high",
+    "shadowing_heavy"
+  ]
+}

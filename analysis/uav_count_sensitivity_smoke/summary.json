@@ -1,0 +1,461 @@
+{
+  "experiment": {
+    "arrival_window": 20,
+    "flows": 20,
+    "grid_step": 0.2,
+    "reference_count": 20,
+    "steps": 100,
+    "test_seed_count": 3,
+    "train_seed_count": 2,
+    "uav_counts": [
+      8,
+      16,
+      24
+    ]
+  },
+  "fixed_assumptions": {
+    "traffic_policy": "fixed flows and arrival window for every UAV count",
+    "weight_policy": "tune once at reference count and freeze across the sweep",
+    "world_bounds_policy": "fixed default world bounds for every UAV count"
+  },
+  "overall_ranking": [
+    {
+      "avg_delivery_latency_steps_ci95": 4.355832507016413,
+      "avg_delivery_latency_steps_mean": 10.207625356335367,
+      "avg_hops_per_delivered_ci95": 0.6061697730556114,
+      "avg_hops_per_delivered_mean": 2.375085054264621,
+      "avg_success_rate_ci95": 0.09772464890919151,
+      "avg_success_rate_mean": 0.49903966923541493,
+      "avg_total_queue_length_ci95": 1.156430354689635,
+      "avg_total_queue_length_mean": 3.1533333333333338,
+      "packet_delivery_ratio_ci95": 0.1954485358777269,
+      "packet_delivery_ratio_mean": 0.6944444444444445,
+      "router": "slar-tuned",
+      "transmission_attempts_ci95": 22.90579185092813,
+      "transmission_attempts_mean": 94.0
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 2.9813591926985556,
+      "avg_delivery_latency_steps_mean": 12.185329777435038,
+      "avg_hops_per_delivered_ci95": 0.6269847551716249,
+      "avg_hops_per_delivered_mean": 2.339741983163036,
+      "avg_success_rate_ci95": 0.06176317723035274,
+      "avg_success_rate_mean": 0.45398562087229677,
+      "avg_total_queue_length_ci95": 0.8912738299712736,
+      "avg_total_queue_length_mean": 3.4566666666666666,
+      "packet_delivery_ratio_ci95": 0.17554058828083552,
+      "packet_delivery_ratio_mean": 0.6944444444444444,
+      "router": "slar-default",
+      "transmission_attempts_ci95": 23.07604971140808,
+      "transmission_attempts_mean": 101.0
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 2.7524119969114555,
+      "avg_delivery_latency_steps_mean": 11.96858998701104,
+      "avg_hops_per_delivered_ci95": 0.4744658212091037,
+      "avg_hops_per_delivered_mean": 2.1685411566990513,
+      "avg_success_rate_ci95": 0.044628461464080504,
+      "avg_success_rate_mean": 0.3832766618544963,
+      "avg_total_queue_length_ci95": 0.8708179333935641,
+      "avg_total_queue_length_mean": 3.5122222222222224,
+      "packet_delivery_ratio_ci95": 0.1814031253298354,
+      "packet_delivery_ratio_mean": 0.6722222222222222,
+      "router": "gpsr",
+      "transmission_attempts_ci95": 29.64718980193015,
+      "transmission_attempts_mean": 111.88888888888889
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 2.7524119969114555,
+      "avg_delivery_latency_steps_mean": 11.96858998701104,
+      "avg_hops_per_delivered_ci95": 0.4744658212091037,
+      "avg_hops_per_delivered_mean": 2.1685411566990513,
+      "avg_success_rate_ci95": 0.044628461464080504,
+      "avg_success_rate_mean": 0.3832766618544963,
+      "avg_total_queue_length_ci95": 0.8708179333935641,
+      "avg_total_queue_length_mean": 3.5122222222222224,
+      "packet_delivery_ratio_ci95": 0.1814031253298354,
+      "packet_delivery_ratio_mean": 0.6722222222222222,
+      "router": "slar-geo",
+      "transmission_attempts_ci95": 29.64718980193015,
+      "transmission_attempts_mean": 111.88888888888889
+    },
+    {
+      "avg_delivery_latency_steps_ci95": 3.3515066986333983,
+      "avg_delivery_latency_steps_mean": 11.513198448724765,
+      "avg_hops_per_delivered_ci95": 0.5799436011314135,
+      "avg_hops_per_delivered_mean": 2.044965877202719,
+      "avg_success_rate_ci95": 0.09964025912054829,
+      "avg_success_rate_mean": 0.4212530638878767,
+      "avg_total_queue_length_ci95": 0.715719434187503,
+      "avg_total_queue_length_mean": 3.7655555555555558,
+      "packet_delivery_ratio_ci95": 0.17924145554538706,
+      "packet_delivery_ratio_mean": 0.5833333333333334,
+      "router": "aodv",
+      "transmission_attempts_ci95": 58.70897013432745,
+      "transmission_attempts_mean": 102.44444444444444
+    }
+  ],
+  "top_10_tuning_rows": [
+    {
+      "train_avg_attempts": 127.75,
+      "train_avg_latency": 11.294516894139573,
+      "train_avg_pdr": 0.9125,
+      "train_avg_success_rate": 0.5641307646864141,
+      "w_geo": 0.4,
+      "w_ld": 0.0,
+      "w_link": 0.6000000000000001
+    },
+    {
+      "train_avg_attempts": 130.625,
+      "train_avg_latency": 10.745307418944588,
+      "train_avg_pdr": 0.8645833333333334,
+      "train_avg_success_rate": 0.5126081304457374,
+      "w_geo": 0.4,
+      "w_ld": 0.2,
+      "w_link": 0.4
+    },
+    {
+      "train_avg_attempts": 132.0,
+      "train_avg_latency": 10.470243122992905,
+      "train_avg_pdr": 0.8500000000000001,
+      "train_avg_success_rate": 0.649226153276195,
+      "w_geo": 0.0,
+      "w_ld": 0.2,
+      "w_link": 0.8
+    },
+    {
+      "train_avg_attempts": 129.625,
+      "train_avg_latency": 9.850655194019533,
+      "train_avg_pdr": 0.8458333333333333,
+      "train_avg_success_rate": 0.5415403049482304,
+      "w_geo": 0.2,
+      "w_ld": 0.4,
+      "w_link": 0.4
+    },
+    {
+      "train_avg_attempts": 149.25,
+      "train_avg_latency": 9.894158036021427,
+      "train_avg_pdr": 0.8458333333333333,
+      "train_avg_success_rate": 0.43340741928940185,
+      "w_geo": 0.6000000000000001,
+      "w_ld": 0.0,
+      "w_link": 0.4
+    },
+    {
+      "train_avg_attempts": 136.0,
+      "train_avg_latency": 10.598052345938376,
+      "train_avg_pdr": 0.8416666666666667,
+      "train_avg_success_rate": 0.6455312584301967,
+      "w_geo": 0.0,
+      "w_ld": 0.8,
+      "w_link": 0.2
+    },
+    {
+      "train_avg_attempts": 138.75,
+      "train_avg_latency": 9.746490036231883,
+      "train_avg_pdr": 0.8375000000000001,
+      "train_avg_success_rate": 0.6166669437118264,
+      "w_geo": 0.0,
+      "w_ld": 0.4,
+      "w_link": 0.6000000000000001
+    },
+    {
+      "train_avg_attempts": 132.75,
+      "train_avg_latency": 10.147660887962612,
+      "train_avg_pdr": 0.8333333333333333,
+      "train_avg_success_rate": 0.5416073946031653,
+      "w_geo": 0.2,
+      "w_ld": 0.2,
+      "w_link": 0.6000000000000001
+    },
+    {
+      "train_avg_attempts": 151.375,
+      "train_avg_latency": 10.180671296296296,
+      "train_avg_pdr": 0.83125,
+      "train_avg_success_rate": 0.42279059300747857,
+      "w_geo": 1.0,
+      "w_ld": 0.0,
+      "w_link": 0.0
+    },
+    {
+      "train_avg_attempts": 132.375,
+      "train_avg_latency": 10.810254459874136,
+      "train_avg_pdr": 0.8312499999999999,
+      "train_avg_success_rate": 0.5729997917466783,
+      "w_geo": 0.2,
+      "w_ld": 0.0,
+      "w_link": 0.8
+    }
+  ],
+  "tuned_weights": {
+    "w_geo": 0.4,
+    "w_ld": 0.0,
+    "w_link": 0.6000000000000001
+  },
+  "tuning_protocol": {
+    "reference_count": 20,
+    "scenarios": [
+      "base",
+      "traffic_heavy",
+      "mobility_high",
+      "shadowing_heavy"
+    ]
+  },
+  "uav_count_results": [
+    {
+      "routers": [
+        {
+          "avg_delivery_latency_steps_ci95": 9.532273449035257,
+          "avg_delivery_latency_steps_mean": 15.361111111111112,
+          "avg_hops_per_delivered_ci95": 0.31621525281162216,
+          "avg_hops_per_delivered_mean": 1.277777777777778,
+          "avg_success_rate_ci95": 0.1875975760745136,
+          "avg_success_rate_mean": 0.5758639021796915,
+          "avg_total_queue_length_ci95": 2.1361177076046314,
+          "avg_total_queue_length_mean": 4.733333333333333,
+          "packet_delivery_ratio_ci95": 0.5171145012736736,
+          "packet_delivery_ratio_mean": 0.3666666666666667,
+          "router": "aodv",
+          "transmission_attempts_ci95": 66.7026825816062,
+          "transmission_attempts_mean": 26.0,
+          "uav_count": 8
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 8.716366153152254,
+          "avg_delivery_latency_steps_mean": 15.852813852813853,
+          "avg_hops_per_delivered_ci95": 0.49495978482223923,
+          "avg_hops_per_delivered_mean": 1.5156926406926408,
+          "avg_success_rate_ci95": 0.15266988429622516,
+          "avg_success_rate_mean": 0.4290473017988008,
+          "avg_total_queue_length_ci95": 1.5057918571235733,
+          "avg_total_queue_length_mean": 4.756666666666667,
+          "packet_delivery_ratio_ci95": 0.258557250636837,
+          "packet_delivery_ratio_mean": 0.43333333333333335,
+          "router": "gpsr",
+          "transmission_attempts_ci95": 48.190564268383056,
+          "transmission_attempts_mean": 66.33333333333333,
+          "uav_count": 8
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 5.958915776440002,
+          "avg_delivery_latency_steps_mean": 16.63369963369963,
+          "avg_hops_per_delivered_ci95": 0.6166347547903976,
+          "avg_hops_per_delivered_mean": 1.559981684981685,
+          "avg_success_rate_ci95": 0.13654589556205074,
+          "avg_success_rate_mean": 0.43969057665260197,
+          "avg_total_queue_length_ci95": 1.5891363743066114,
+          "avg_total_queue_length_mean": 4.736666666666667,
+          "packet_delivery_ratio_ci95": 0.39926927558722175,
+          "packet_delivery_ratio_mean": 0.4666666666666666,
+          "router": "slar-default",
+          "transmission_attempts_ci95": 47.58923242610017,
+          "transmission_attempts_mean": 66.0,
+          "uav_count": 8
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 8.716366153152254,
+          "avg_delivery_latency_steps_mean": 15.852813852813853,
+          "avg_hops_per_delivered_ci95": 0.49495978482223923,
+          "avg_hops_per_delivered_mean": 1.5156926406926408,
+          "avg_success_rate_ci95": 0.15266988429622516,
+          "avg_success_rate_mean": 0.4290473017988008,
+          "avg_total_queue_length_ci95": 1.5057918571235733,
+          "avg_total_queue_length_mean": 4.756666666666667,
+          "packet_delivery_ratio_ci95": 0.258557250636837,
+          "packet_delivery_ratio_mean": 0.43333333333333335,
+          "router": "slar-geo",
+          "transmission_attempts_ci95": 48.190564268383056,
+          "transmission_attempts_mean": 66.33333333333333,
+          "uav_count": 8
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 5.958915776440002,
+          "avg_delivery_latency_steps_mean": 16.63369963369963,
+          "avg_hops_per_delivered_ci95": 0.6166347547903976,
+          "avg_hops_per_delivered_mean": 1.559981684981685,
+          "avg_success_rate_ci95": 0.13654589556205074,
+          "avg_success_rate_mean": 0.43969057665260197,
+          "avg_total_queue_length_ci95": 1.5891363743066114,
+          "avg_total_queue_length_mean": 4.736666666666667,
+          "packet_delivery_ratio_ci95": 0.39926927558722175,
+          "packet_delivery_ratio_mean": 0.4666666666666666,
+          "router": "slar-tuned",
+          "transmission_attempts_ci95": 47.58923242610017,
+          "transmission_attempts_mean": 66.0,
+          "uav_count": 8
+        }
+      ],
+      "uav_count": 8
+    },
+    {
+      "routers": [
+        {
+          "avg_delivery_latency_steps_ci95": 11.84775794234093,
+          "avg_delivery_latency_steps_mean": 8.373659673659674,
+          "avg_hops_per_delivered_ci95": 1.8200076770355589,
+          "avg_hops_per_delivered_mean": 2.1107226107226107,
+          "avg_success_rate_ci95": 0.16964574562722484,
+          "avg_success_rate_mean": 0.37467153941808323,
+          "avg_total_queue_length_ci95": 0.8685013453940764,
+          "avg_total_queue_length_mean": 3.6333333333333333,
+          "packet_delivery_ratio_ci95": 0.1897291516869733,
+          "packet_delivery_ratio_mean": 0.5666666666666668,
+          "router": "aodv",
+          "transmission_attempts_ci95": 198.1453465275715,
+          "transmission_attempts_mean": 109.33333333333333,
+          "uav_count": 16
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 2.01389497981432,
+          "avg_delivery_latency_steps_mean": 9.847985347985349,
+          "avg_hops_per_delivered_ci95": 1.404959280955954,
+          "avg_hops_per_delivered_mean": 2.2387612387612386,
+          "avg_success_rate_ci95": 0.12731878416521825,
+          "avg_success_rate_mean": 0.3417156770673306,
+          "avg_total_queue_length_ci95": 0.5838164056167247,
+          "avg_total_queue_length_mean": 3.513333333333333,
+          "packet_delivery_ratio_ci95": 0.18972915168697316,
+          "packet_delivery_ratio_mean": 0.6333333333333333,
+          "router": "gpsr",
+          "transmission_attempts_ci95": 42.32764616375905,
+          "transmission_attempts_mean": 123.33333333333333,
+          "uav_count": 16
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 7.698577159632872,
+          "avg_delivery_latency_steps_mean": 10.202991452991453,
+          "avg_hops_per_delivered_ci95": 1.7597466915890747,
+          "avg_hops_per_delivered_mean": 2.248717948717949,
+          "avg_success_rate_ci95": 0.13019215646670124,
+          "avg_success_rate_mean": 0.39007255377055633,
+          "avg_total_queue_length_ci95": 0.4732918002902397,
+          "avg_total_queue_length_mean": 3.4600000000000004,
+          "packet_delivery_ratio_ci95": 0.1897291516869733,
+          "packet_delivery_ratio_mean": 0.6666666666666666,
+          "router": "slar-default",
+          "transmission_attempts_ci95": 44.18228235640276,
+          "transmission_attempts_mean": 114.66666666666667,
+          "uav_count": 16
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 2.01389497981432,
+          "avg_delivery_latency_steps_mean": 9.847985347985349,
+          "avg_hops_per_delivered_ci95": 1.404959280955954,
+          "avg_hops_per_delivered_mean": 2.2387612387612386,
+          "avg_success_rate_ci95": 0.12731878416521825,
+          "avg_success_rate_mean": 0.3417156770673306,
+          "avg_total_queue_length_ci95": 0.5838164056167247,
+          "avg_total_queue_length_mean": 3.513333333333333,
+          "packet_delivery_ratio_ci95": 0.18972915168697316,
+          "packet_delivery_ratio_mean": 0.6333333333333333,
+          "router": "slar-geo",
+          "transmission_attempts_ci95": 42.32764616375905,
+          "transmission_attempts_mean": 123.33333333333333,
+          "uav_count": 16
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 12.065607262125384,
+          "avg_delivery_latency_steps_mean": 8.040053628288922,
+          "avg_hops_per_delivered_ci95": 1.7716805358458192,
+          "avg_hops_per_delivered_mean": 2.411764705882353,
+          "avg_success_rate_ci95": 0.322082221252791,
+          "avg_success_rate_mean": 0.42221312004885814,
+          "avg_total_queue_length_ci95": 0.7937587741249739,
+          "avg_total_queue_length_mean": 3.34,
+          "packet_delivery_ratio_ci95": 0.4968275423687505,
+          "packet_delivery_ratio_mean": 0.65,
+          "router": "slar-tuned",
+          "transmission_attempts_ci95": 87.55777905441238,
+          "transmission_attempts_mean": 114.33333333333333,
+          "uav_count": 16
+        }
+      ],
+      "uav_count": 16
+    },
+    {
+      "routers": [
+        {
+          "avg_delivery_latency_steps_ci95": 2.2560657396151926,
+          "avg_delivery_latency_steps_mean": 10.804824561403509,
+          "avg_hops_per_delivered_ci95": 0.7721173500426134,
+          "avg_hops_per_delivered_mean": 2.74639724310777,
+          "avg_success_rate_ci95": 0.03759543459178215,
+          "avg_success_rate_mean": 0.3132237500658553,
+          "avg_total_queue_length_ci95": 0.8884048896323185,
+          "avg_total_queue_length_mean": 2.9299999999999997,
+          "packet_delivery_ratio_ci95": 0.31258047398054417,
+          "packet_delivery_ratio_mean": 0.8166666666666668,
+          "router": "aodv",
+          "transmission_attempts_ci95": 31.12615631443236,
+          "transmission_attempts_mean": 172.0,
+          "uav_count": 24
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 5.137108878021792,
+          "avg_delivery_latency_steps_mean": 10.204970760233918,
+          "avg_hops_per_delivered_ci95": 0.22978925617077572,
+          "avg_hops_per_delivered_mean": 2.751169590643275,
+          "avg_success_rate_ci95": 0.09024342530931652,
+          "avg_success_rate_mean": 0.37906700669735777,
+          "avg_total_queue_length_ci95": 0.6137043656854465,
+          "avg_total_queue_length_mean": 2.266666666666666,
+          "packet_delivery_ratio_ci95": 0.12420688559218761,
+          "packet_delivery_ratio_mean": 0.9499999999999998,
+          "router": "gpsr",
+          "transmission_attempts_ci95": 37.591824899193014,
+          "transmission_attempts_mean": 146.0,
+          "uav_count": 24
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 0.8506742759136144,
+          "avg_delivery_latency_steps_mean": 9.719298245614036,
+          "avg_hops_per_delivered_ci95": 0.4714045208087598,
+          "avg_hops_per_delivered_mean": 3.210526315789474,
+          "avg_success_rate_ci95": 0.1656817527390744,
+          "avg_success_rate_mean": 0.5321937321937322,
+          "avg_total_queue_length_ci95": 0.16162811242358718,
+          "avg_total_queue_length_mean": 2.1733333333333333,
+          "packet_delivery_ratio_ci95": 3.377781301784425e-16,
+          "packet_delivery_ratio_mean": 0.9499999999999998,
+          "router": "slar-default",
+          "transmission_attempts_ci95": 27.363127394306687,
+          "transmission_attempts_mean": 122.33333333333333,
+          "uav_count": 24
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 5.137108878021792,
+          "avg_delivery_latency_steps_mean": 10.204970760233918,
+          "avg_hops_per_delivered_ci95": 0.22978925617077572,
+          "avg_hops_per_delivered_mean": 2.751169590643275,
+          "avg_success_rate_ci95": 0.09024342530931652,
+          "avg_success_rate_mean": 0.37906700669735777,
+          "avg_total_queue_length_ci95": 0.6137043656854465,
+          "avg_total_queue_length_mean": 2.266666666666666,
+          "packet_delivery_ratio_ci95": 0.12420688559218761,
+          "packet_delivery_ratio_mean": 0.9499999999999998,
+          "router": "slar-geo",
+          "transmission_attempts_ci95": 37.591824899193014,
+          "transmission_attempts_mean": 146.0,
+          "uav_count": 24
+        },
+        {
+          "avg_delivery_latency_steps_ci95": 4.238011413633953,
+          "avg_delivery_latency_steps_mean": 5.949122807017544,
+          "avg_hops_per_delivered_ci95": 0.24532669074055494,
+          "avg_hops_per_delivered_mean": 3.153508771929825,
+          "avg_success_rate_ci95": 0.1330505583813941,
+          "avg_success_rate_mean": 0.6352153110047847,
+          "avg_total_queue_length_ci95": 0.43193528587292324,
+          "avg_total_queue_length_mean": 1.3833333333333335,
+          "packet_delivery_ratio_ci95": 0.07171087883185465,
+          "packet_delivery_ratio_mean": 0.9666666666666667,
+          "router": "slar-tuned",
+          "transmission_attempts_ci95": 18.972915168697327,
+          "transmission_attempts_mean": 101.66666666666667,
+          "uav_count": 24
+        }
+      ],
+      "uav_count": 24
+    }
+  ]
+}
